@@ -1,0 +1,538 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b1f3a">
+
+    <meta
+        name="description"
+        content="Find properties directly from owners with STACKLY Real Estate."
+    >
+
+    <title>List Your Property | STACKLY Real Estate</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div data-sr-header></div>
+
+    <!-- Main Content -->
+    <main>
+
+        <section class="page-shell">
+
+            <!-- Page Heading -->
+            <div class="page-heading">
+
+                <div>
+                    <h1 data-i18n="listTitle">
+                        List Your Property
+                    </h1>
+
+                    <p data-i18n="listIntro">
+                        Sell or rent your property directly. Add a few details to help buyers and renters find you.
+                    </p>
+
+                    <span class="page-badge" data-i18n="ownerOnly">
+                        Only owner-listed properties. Zero brokerage on every connection.
+                    </span>
+                </div>
+
+            </div>
+
+            <!-- Form Layout -->
+            <div class="form-layout">
+
+                <!-- Listing Form -->
+                <form class="form-stack" id="listingForm">
+
+                    <!-- Basic Property Details -->
+                    <section class="form-panel">
+
+                        <h2 data-i18n="basicDetails">
+                            Basic property details
+                        </h2>
+
+                        <p data-i18n="basicHint">
+                            Tell us what you would like to list.
+                        </p>
+
+                        <div class="form-grid">
+
+                            <div class="field">
+
+                                <label data-i18n="wantTo">
+                                    I want to
+                                </label>
+
+                                <div class="segmented">
+
+                                    <label>
+                                        <input
+                                            type="radio"
+                                            name="intent"
+                                            value="Sale"
+                                            checked
+                                        >
+                                        <span data-i18n="sale">Sale</span>
+                                    </label>
+
+                                    <label>
+                                        <input
+                                            type="radio"
+                                            name="intent"
+                                            value="Rent"
+                                        >
+                                        <span data-i18n="rent">Rent</span>
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+                            <div class="field">
+
+                                <label for="propertyType" data-i18n="propertyTypeLabel">
+                                    Property type
+                                </label>
+
+                                <select id="propertyType" required>
+                                    <option value="Apartment" data-i18n="apartment">
+                                        Apartment
+                                    </option>
+
+                                    <option value="Independent House" data-i18n="independentHouse">
+                                        Independent House
+                                    </option>
+
+                                    <option value="Land / Plot" data-i18n="landPlot">
+                                        Land / Plot
+                                    </option>
+
+                                    <option value="Commercial" data-i18n="commercialProperty">
+                                        Commercial
+                                    </option>
+                                </select>
+
+                            </div>
+
+                            <div class="field full">
+
+                                <label for="propertyTitle" data-i18n="propertyTitle">
+                                    Property title
+                                </label>
+
+                                <input
+                                    id="propertyTitle"
+                                    required
+                                    placeholder="e.g. 3 BHK apartment in Whitefield"
+                                    data-i18n-placeholder="titlePlaceholder"
+                                >
+
+                            </div>
+
+                            <div class="field">
+
+                                <label for="area" data-i18n="area">
+                                    Area
+                                </label>
+
+                                <input
+                                    id="area"
+                                    type="number"
+                                    min="1"
+                                    required
+                                    placeholder="e.g. 1,450"
+                                    data-i18n-placeholder="areaPlaceholder"
+                                >
+
+                            </div>
+
+                            <div class="field">
+
+                                <label for="unit" data-i18n="unit">
+                                    Unit
+                                </label>
+
+                                <select id="unit">
+                                    <option>sq.ft.</option>
+                                    <option>sq.yd.</option>
+                                    <option>Acres</option>
+                                </select>
+
+                            </div>
+
+                            <div class="field">
+
+                                <label for="bedrooms" data-i18n="bedrooms">
+                                    Bedrooms
+                                </label>
+
+                                <select id="bedrooms">
+                                    <option data-i18n="select">Select</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4+</option>
+                                </select>
+
+                            </div>
+
+                            <div class="field">
+
+                                <label for="bathrooms" data-i18n="bathrooms">
+                                    Bathrooms
+                                </label>
+
+                                <select id="bathrooms">
+                                    <option data-i18n="select">Select</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4+</option>
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- Location -->
+                    <section class="form-panel">
+
+                        <h2 data-i18n="locationSection">
+                            Location
+                        </h2>
+
+                        <p data-i18n="ownerOnly">
+                            Only owner-listed properties. Zero brokerage on every connection.
+                        </p>
+
+                        <div class="form-grid">
+
+                            <div class="field">
+
+                                <label for="city" data-i18n="city">
+                                    City
+                                </label>
+
+                                <input
+                                    id="city"
+                                    required
+                                    placeholder="e.g. Bengaluru"
+                                    data-i18n-placeholder="cityPlaceholder"
+                                >
+
+                            </div>
+
+                            <div class="field">
+
+                                <label for="locality" data-i18n="locality">
+                                    Locality
+                                </label>
+
+                                <input
+                                    id="locality"
+                                    required
+                                    placeholder="e.g. Whitefield"
+                                    data-i18n-placeholder="localityPlaceholder"
+                                >
+
+                            </div>
+
+                            <div class="field full">
+
+                                <label for="address" data-i18n="address">
+                                    Property address
+                                </label>
+
+                                <input
+                                    id="address"
+                                    required
+                                    placeholder="Building or house number, street and landmark"
+                                    data-i18n-placeholder="addressPlaceholder"
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- Pricing and Description -->
+                    <section class="form-panel">
+
+                        <h2 data-i18n="pricing">
+                            Pricing and description
+                        </h2>
+
+                        <div class="form-grid">
+
+                            <div class="field full">
+
+                                <label for="price" data-i18n="askingPrice">
+                                    Asking price (₹)
+                                </label>
+
+                                <input
+                                    id="price"
+                                    type="number"
+                                    min="1"
+                                    required
+                                    placeholder="e.g. 92,00,000"
+                                    data-i18n-placeholder="pricePlaceholder"
+                                >
+
+                            </div>
+
+                            <div class="field full">
+
+                                <label for="description" data-i18n="description">
+                                    Property description
+                                </label>
+
+                                <textarea
+                                    id="description"
+                                    required
+                                    placeholder="Describe the property, its condition, key features and nearby facilities."
+                                    data-i18n-placeholder="descriptionPlaceholder"
+                                ></textarea>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- Property Photos -->
+                    <section class="form-panel">
+
+                        <h2 data-i18n="photos">
+                            Property photos
+                        </h2>
+
+                        <p data-i18n="uploadLimit">
+                            Upload exactly 6 property photos (JPG, PNG or WebP).
+                        </p>
+
+                        <div class="upload-box">
+
+                            <p data-i18n="photoHint">
+                                Drag photos here or choose files
+                            </p>
+
+                            <input
+                                id="photos"
+                                type="file"
+                                accept="image/jpeg,image/png,image/webp"
+                                multiple
+                            >
+
+                            <div id="photoPreview" class="listing-photo-preview" aria-live="polite"></div>
+
+                            <small data-i18n="uploadLimit">
+                                Upload exactly 6 property photos (JPG, PNG or WebP).
+                            </small>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- Owner Contact -->
+                    <section class="form-panel">
+
+                        <h2 data-i18n="ownerContact">
+                            Owner contact
+                        </h2>
+
+                        <div class="form-grid">
+
+                            <div class="field">
+
+                                <label for="ownerName" data-i18n="ownerName">
+                                    Owner name
+                                </label>
+
+                                <input
+                                    id="ownerName"
+                                    required
+                                    placeholder="Enter your full name"
+                                    data-i18n-placeholder="ownerNamePlaceholder"
+                                >
+
+                            </div>
+
+                            <div class="field">
+
+                                <label for="mobile" data-i18n="mobile">
+                                    Mobile number
+                                </label>
+
+                                <input
+                                    id="mobile"
+                                    type="tel"
+                                    pattern="[0-9+() -]{8,16}"
+                                    required
+                                    placeholder="+91 10-digit mobile number"
+                                    data-i18n-placeholder="mobilePlaceholder"
+                                >
+
+                            </div>
+
+                            <!-- Owner Confirmation -->
+                            <div class="full">
+
+                                <label class="check-row">
+
+                                    <input
+                                        id="ownerConfirm"
+                                        type="checkbox"
+                                        required
+                                    >
+
+                                    <span data-i18n="confirmOwner">
+                                        I confirm that I am the owner of this property, not a broker, agent or dealer, and that the information provided is accurate.
+                                    </span>
+
+                                </label>
+
+                                <p class="helper" data-i18n="termsAgree">
+                                    By publishing, you agree to the Terms &amp; Conditions and Privacy Policy.
+                                </p>
+
+                            </div>
+
+
+                            <!-- Form Actions -->
+                            <div class="full form-actions">
+
+                                <button
+                                    class="sr-btn"
+                                    type="submit"
+                                    data-i18n="publish"
+                                >
+                                    Publish Property
+                                </button>
+
+                                <button
+                                    class="sr-btn secondary"
+                                    type="button"
+                                    id="saveDraft"
+                                    data-i18n="saveDraft"
+                                >
+                                    Save Draft
+                                </button>
+
+                                <strong class="helper" data-i18n="zeroBrokerageTag">
+                                    ZERO BROKERAGE
+                                </strong>
+
+                            </div>
+
+
+                            <!-- Form Status -->
+                            <div
+                                class="full form-status"
+                                id="formStatus"
+                                role="status"
+                            ></div>
+
+                        </div>
+
+                    </section>
+
+                </form>
+
+
+                <!-- Sidebar Tips -->
+                <aside class="tip-stack">
+
+                    <section class="tip-panel">
+
+                        <h3 data-i18n="listingTips">
+                            Make your listing useful
+                        </h3>
+
+                        <h4 data-i18n="keepDetails">
+                            Keep details accurate
+                        </h4>
+
+                        <p data-i18n="keepDetailsText">
+                            Check the area, location and asking price before publishing.
+                        </p>
+
+                        <h4 data-i18n="showProperty">
+                            Show the property clearly
+                        </h4>
+
+                        <p data-i18n="showPropertyText">
+                            Add details of the rooms, interior and any important facilities.
+                        </p>
+
+                        <h4 data-i18n="writeDescription">
+                            Write a simple description
+                        </h4>
+
+                        <p data-i18n="writeDescriptionText">
+                            Mention the condition, access and nearby facilities.
+                        </p>
+
+                    </section>
+
+
+                    <section class="tip-panel">
+
+                        <h3 data-i18n="ownerOnlyTitle">
+                            Only owners. Always direct.
+                        </h3>
+
+                        <p data-i18n="ownerOnlyText">
+                            Connect directly with buyers and renters. Brokers, agents and middlemen are not permitted.
+                        </p>
+
+                        <strong data-i18n="zeroBrokerageTag">
+                            ZERO BROKERAGE
+                        </strong>
+
+                    </section>
+
+                </aside>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <div data-sr-footer></div>
+
+
+    <!-- JavaScript -->
+    <script src="js/common.js" defer></script>
+
+    <script src="js/home-translations.js" defer></script>
+
+    <script src="js/page-translations.js" defer></script>
+
+    <script src="js/property-enhancements.js" defer></script>
+
+    <script src="js/list-property.js" defer></script>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1f3a"><meta name="description" content="Contact the owner directly about a STACKLY Real Estate property.">
+  <title>Contact Us | STACKLY Real Estate</title>
+  <link rel="stylesheet" href="css/common.css"><link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+  <div data-sr-header></div>
+  <main>
+    <section class="page-shell contact-page-shell">
+      <section class="contact-property-hero" id="contactPropertyHero" hidden>
+        <img id="contactHeroImage" src="" alt="Selected property">
+        <div class="contact-property-hero-overlay"></div>
+        <div class="contact-property-hero-copy">
+          <span data-i18n="contactHeroEyebrow">PROPERTY ENQUIRY</span>
+          <h1 data-i18n="contactHeroTitle">Enquire About This Property</h1>
+          <h2 id="contactHeroPropertyTitle"></h2>
+          <p><strong id="contactHeroPrice"></strong><span> · </span><span id="contactHeroLocation"></span></p>
+        </div>
+      </section>
+      <div class="page-heading"><div><h1 data-i18n="contactTitle">Contact Us</h1><p data-i18n="contactIntro">Send an enquiry directly about this property.</p></div></div>
+      <div class="contact-layout contact-enquiry-layout">
+        <form class="contact-panel" id="contactForm">
+          <h2 data-i18n="sendMessage">Send Enquiry</h2>
+          <div id="contactPropertyContext" class="contact-property-context" hidden></div>
+          <h3 class="form-subheading" data-i18n="yourDetails">Your details</h3>
+          <div class="form-grid">
+            <div class="field"><label for="contactName" data-i18n="fullName">Full name</label><input id="contactName" name="visitorName" autocomplete="name" required data-i18n-placeholder="visitorNamePlaceholder" placeholder="Enter your full name"></div>
+            <div class="field"><label for="contactEmail" data-i18n="email">Email address</label><input id="contactEmail" name="visitorEmail" type="email" autocomplete="email" required data-i18n-placeholder="visitorEmailPlaceholder" placeholder="Enter your email"></div>
+            <div class="field"><label for="visitorPhone" data-i18n="mobile">Mobile number</label><input id="visitorPhone" name="visitorPhone" type="tel" pattern="[0-9+() -]{8,18}" required data-i18n-placeholder="visitorPhonePlaceholder" placeholder="Enter mobile number"></div>
+            <div class="field"><label for="visitorType" data-i18n="lookingAs">Looking as</label><select id="visitorType" name="visitorType" required><option value="" data-i18n="chooseOne">Choose one</option><option value="bachelor" data-i18n="bachelor">Bachelor</option><option value="family" data-i18n="family">Family</option></select></div>
+            <div class="field" id="familyCountWrap" hidden><label for="familyCount" data-i18n="familyMembers">Number of family members</label><input id="familyCount" name="familyCount" type="number" min="1" max="20" data-i18n-placeholder="familyMembersPlaceholder" placeholder="How many people?"></div>
+            <div class="field full"><label for="contactMessage" data-i18n="message">Message</label><textarea id="contactMessage" name="visitorMessage" required data-i18n-placeholder="enquiryMessagePlaceholder" placeholder="Write your enquiry or preferred visit time"></textarea></div>
+            <div class="full"><button class="sr-btn" type="submit" data-i18n="sendEnquiry">Send Enquiry</button></div>
+            <div class="full form-status" id="contactStatus" role="status" aria-live="polite">
+              <span class="success-check" aria-hidden="true">✓</span>
+              <strong data-i18n="enquirySuccessTitle">Your enquiry has been submitted!</strong>
+              <span data-i18n="enquirySuccessText">Our team will contact you soon.</span>
+            </div>
+          </div>
+        </form>
+        <aside class="contact-panel contact-owner-panel">
+          <h2 data-i18n="ownerAndPropertyInfo">Owner &amp; property information</h2>
+          <div class="contact-details"><p data-i18n="directOwnerNote">Your enquiry will be directed to the property owner.</p><p>✉ support@stacklyrealestate.com</p><p>⌖ <span id="contactPropertyLocation">Bengaluru, Karnataka, India</span></p>
+            <div class="property-map-wrap"><h3 data-i18n="propertyLocationMap">Property location</h3><iframe id="propertyLocationMap" title="Property location map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.openstreetmap.org/export/embed.html?bbox=77.52%2C12.90%2C77.70%2C13.08&amp;layer=mapnik"></iframe><a id="propertyMapLink" href="https://www.openstreetmap.org/?mlat=12.9716&amp;mlon=77.5946#map=13/12.9716/77.5946" target="_blank" rel="noopener" data-i18n="openMap">Open map</a></div>
+            <p data-i18n="ownerOnly">Only owner-listed properties. Zero brokerage on every connection.</p></div>
+        </aside>
+      </div>
+      <div class="contact-bottom-actions"><button type="button" class="sr-btn secondary" id="contactBackButton" data-i18n="back">Back</button><a class="sr-btn" href="buy.html" data-i18n="backToProperties">Back to Properties</a></div>
+    </section>
+  </main>
+  <div data-sr-footer></div>
+  <script src="js/common.js" defer></script><script src="js/home-translations.js" defer></script><script src="js/page-translations.js" defer></script><script src="js/property-enhancements.js" defer></script><script src="js/property-data.js" defer></script><script src="js/page.js" defer></script>
+</body>
+</html>

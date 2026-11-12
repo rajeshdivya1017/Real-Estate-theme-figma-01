@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b1f3a">
+
+    <meta
+        name="description"
+        content="Find properties directly from owners with STACKLY Real Estate."
+    >
+
+    <title>Buy Properties | STACKLY Real Estate</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div data-sr-header></div>
+
+    <!-- Main Content -->
+    <main>
+
+        <section class="page-shell">
+
+            <!-- Page Heading -->
+            <div class="page-heading">
+
+                <div>
+
+                    <h1 data-i18n="buyTitle">
+                        Buy Properties
+                    </h1>
+
+                    <p data-i18n="buyIntro">
+                        Find your next home or plot, directly from the owner. No brokers. No commissions.
+                    </p>
+
+                    <span class="page-badge" data-i18n="ownerOnly">
+                        Only owner-listed properties. Zero brokerage on every connection.
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <!-- Property Filters -->
+            <form class="filter-panel" id="buyFilters">
+
+                <div class="field">
+
+                    <label for="filterLocation" data-i18n="locationLabel">
+                        Location
+                    </label>
+
+                    <input
+                        id="filterLocation"
+                        placeholder="Bengaluru"
+                        data-i18n-placeholder="cityPlaceholder"
+                    >
+
+                </div>
+
+
+                <div class="field">
+
+                    <label for="filterType" data-i18n="propertyTypeLabel">
+                        Property type
+                    </label>
+
+                    <select id="filterType">
+
+                        <option value="" data-i18n="allProperties">
+                            All properties
+                        </option>
+
+                        <option data-i18n="apartment">
+                            Apartment
+                        </option>
+
+                        <option data-i18n="independentHouse">
+                            Independent House
+                        </option>
+
+                        <option data-i18n="landPlot">
+                            Land / Plot
+                        </option>
+
+                        <option data-i18n="commercial">
+                            Commercial
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="field">
+
+                    <label for="filterBudget" data-i18n="budgetLabel">
+                        Budget
+                    </label>
+
+                    <select id="filterBudget">
+
+                        <option value="" data-i18n="anyBudget">
+                            Any Budget
+                        </option>
+
+                        <option value="5000000" data-i18n="under50Lakhs">
+                            Under ₹50 Lakhs
+                        </option>
+
+                        <option value="10000000" data-i18n="under1Crore">
+                            Under ₹1 Crore
+                        </option>
+
+                        <option value="20000000" data-i18n="under2Crores">
+                            Under ₹2 Crores
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <button
+                    class="sr-btn"
+                    type="submit"
+                    data-i18n="search"
+                >
+                    Search Properties
+                </button>
+
+            </form>
+
+
+            <!-- Results Header -->
+            <div class="results-top">
+
+                <div>
+
+                    <h2>
+                        <span id="resultCount">9</span>
+
+                        <span data-i18n="propertiesForSale">
+                            properties for sale in Bengaluru
+                        </span>
+                    </h2>
+
+                    <p data-i18n="ownerOnly">
+                        Only owner-listed properties. Zero brokerage on every connection.
+                    </p>
+
+                </div>
+
+
+                <div class="field">
+
+                    <label for="sortListings" data-i18n="sortBy">
+                        Sort by
+                    </label>
+
+                    <select id="sortListings">
+
+                        <option value="new" data-i18n="newestFirst">
+                            Newest first
+                        </option>
+
+                        <option value="low" data-i18n="priceLowHigh">
+                            Price: Low to high
+                        </option>
+
+                        <option value="high" data-i18n="priceHighLow">
+                            Price: High to low
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- Property Listings -->
+            <div class="property-grid" id="propertyGrid">
+
+
+                <!-- PROPERTY 1 -->
+                <article
+                    class="listing-card"
+                    data-property-id="property-1"
+                >
+
+                    <div
+                        class="listing-photo"
+                        style="background-image:url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&q=80')"
+                    >
+
+                        <button
+                            class="property-favorite listing-favorite"
+                            type="button"
+                            aria-label="Save property"
+                            aria-pressed="false"
+                        >♡</button>
+
+                        <span class="listing-tag">
+                            For Sale
+                        </span>
+
+                    </div>
+
+
+                    <div class="listing-body">
+
+                        <p class="listing-price">
+                            ₹92,00,000
+                        </p>
+
+                        <h3 data-i18n="propTitle1">
+                            3 BHK apartment in Whitefield
+                        </h3>
+
+                        <div class="listing-meta">
+                            ⌖ Whitefield, Bengaluru<br>
+                            1,450 sq.ft. · Apartment
+                        </div>
+
+                        <div class="listing-foot">
+
+                            <span data-i18n="postedOwner">
+                                Posted by Owner
+                            </span>
+
+                            <strong data-i18n="zeroBrokerageTag">
+                                ZERO BROKERAGE
+                            </strong>
+
+                        </div>
+
+                        <div class="listing-action">
+
+                            <a
+                                class="sr-btn"
+                                href="property-details.html?id=1"
+                                data-i18n="viewContact"
+                            >
+                                View Details &amp; Contact Owner
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROPERTY 2 -->
+                <article
+                    class="listing-card"
+                    data-property-id="property-2"
+                >
+
+                    <div
+                        class="listing-photo"
+                        style="background-image:url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80')"
+                    >
+
+                        <button
+                            class="property-favorite listing-favorite"
+                            type="button"
+                            aria-label="Save property"
+                            aria-pressed="false"
+                        >♡</button>
+
+                        <span class="listing-tag">
+                            For Sale
+                        </span>
+
+                    </div>
+
+
+                    <div class="listing-body">
+
+                        <p class="listing-price">
+                            ₹48,00,000
+                        </p>
+
+                        <h3 data-i18n="propTitle2">
+                            Residential plot in Sarjapur
+                        </h3>
+
+                        <div class="listing-meta">
+                            ⌖ Sarjapur Road, Bengaluru<br>
+                            1,200 sq.ft. · Land / Plot
+                        </div>
+
+                        <div class="listing-foot">
+
+                            <span data-i18n="postedOwner">
+                                Posted by Owner
+                            </span>
+
+                            <strong data-i18n="zeroBrokerageTag">
+                                ZERO BROKERAGE
+                            </strong>
+
+                        </div>
+
+                        <div class="listing-action">
+
+                            <a
+                                class="sr-btn"
+                                href="property-details.html?id=2"
+                                data-i18n="viewContact"
+                            >
+                                View Details &amp; Contact Owner
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROPERTY 3 -->
+                <article
+                    class="listing-card"
+                    data-property-id="property-3"
+                >
+
+                    <div
+                        class="listing-photo"
+                        style="background-image:url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=900&q=80')"
+                    >
+
+                        <button
+                            class="property-favorite listing-favorite"
+                            type="button"
+                            aria-label="Save property"
+                            aria-pressed="false"
+                        >♡</button>
+
+                        <span class="listing-tag">
+                            For Sale
+                        </span>
+
+                    </div>
+
+
+                    <div class="listing-body">
+
+                        <p class="listing-price">
+                            ₹85,00,000
+                        </p>
+
+                        <h3 data-i18n="propTitle3">
+                            2 BHK apartment in Hebbal
+                        </h3>
+
+                        <div class="listing-meta">
+                            ⌖ Hebbal, Bengaluru<br>
+                            1,250 sq.ft. · Apartment
+                        </div>
+
+                        <div class="listing-foot">
+
+                            <span data-i18n="postedOwner">
+                                Posted by Owner
+                            </span>
+
+                            <strong data-i18n="zeroBrokerageTag">
+                                ZERO BROKERAGE
+                            </strong>
+
+                        </div>
+
+                        <div class="listing-action">
+
+                            <a
+                                class="sr-btn"
+                                href="property-details.html?id=3"
+                                data-i18n="viewContact"
+                            >
+                                View Details &amp; Contact Owner
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROPERTY 4 -->
+                <article
+                    class="listing-card"
+                    data-property-id="property-4"
+                >
+
+                    <div
+                        class="listing-photo"
+                        style="background-image:url('https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=900&q=80')"
+                    >
+
+                        <button
+                            class="property-favorite listing-favorite"
+                            type="button"
+                            aria-label="Save property"
+                            aria-pressed="false"
+                        >♡</button>
+
+                        <span class="listing-tag">
+                            For Sale
+                        </span>
+
+                    </div>
+
+
+                    <div class="listing-body">
+
+                        <p class="listing-price">
+                            ₹68,00,000
+                        </p>
+
+                        <h3 data-i18n="propTitle4">
+                            2 BHK apartment in Electronic City
+                        </h3>
+
+                        <div class="listing-meta">
+                            ⌖ Electronic City, Bengaluru<br>
+                            1,100 sq.ft. · Apartment
+                        </div>
+
+                        <div class="listing-foot">
+
+                            <span data-i18n="postedOwner">
+                                Posted by Owner
+                            </span>
+
+                            <strong data-i18n="zeroBrokerageTag">
+                                ZERO BROKERAGE
+                            </strong>
+
+                        </div>
+
+                        <div class="listing-action">
+
+                            <a
+                                class="sr-btn"
+                                href="property-details.html?id=4"
+                                data-i18n="viewContact"
+                            >
+                                View Details &amp; Contact Owner
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROPERTY 5 -->
+                <article
+                    class="listing-card"
+                    data-property-id="property-5"
+                >
+
+                    <div
+                        class="listing-photo"
+                        style="background-image:url('https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&w=900&q=80')"
+                    >
+
+                        <button
+                            class="property-favorite listing-favorite"
+                            type="button"
+                            aria-label="Save property"
+                            aria-pressed="false"
+                        >♡</button>
+
+                        <span class="listing-tag">
+                            For Sale
+                        </span>
+
+                    </div>
+
+
+                    <div class="listing-body">
+
+                        <p class="listing-price">
+                            ₹1,15,00,000
+                        </p>
+
+                        <h3 data-i18n="propTitle5">
+                            3 BHK house in Yelahanka
+                        </h3>
+
+                        <div class="listing-meta">
+                            ⌖ Yelahanka, Bengaluru<br>
+                            1,800 sq.ft. · Independent House
+                        </div>
+
+                        <div class="listing-foot">
+
+                            <span data-i18n="postedOwner">
+                                Posted by Owner
+                            </span>
+
+                            <strong data-i18n="zeroBrokerageTag">
+                                ZERO BROKERAGE
+                            </strong>
+
+                        </div>
+
+                        <div class="listing-action">
+
+                            <a
+                                class="sr-btn"
+                                href="property-details.html?id=5"
+                                data-i18n="viewContact"
+                            >
+                                View Details &amp; Contact Owner
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROPERTY 6 -->
+                <article
+                    class="listing-card"
+                    data-property-id="property-6"
+                >
+
+                    <div
+                        class="listing-photo"
+                        style="background-image:url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=80')"
+                    >
+
+                        <button
+                            class="property-favorite listing-favorite"
+                            type="button"
+                            aria-label="Save property"
+                            aria-pressed="false"
+                        >♡</button>
+
+                        <span class="listing-tag">
+                            For Sale
+                        </span>
+
+                    </div>
+
+
+                    <div class="listing-body">
+
+                        <p class="listing-price">
+                            ₹72,00,000
+                        </p>
+
+                        <h3 data-i18n="propTitle6">
+                            Residential plot in Devanahalli
+                        </h3>
+
+                        <div class="listing-meta">
+                            ⌖ Devanahalli, Bengaluru<br>
+                            1,500 sq.ft. · Land / Plot
+                        </div>
+
+                        <div class="listing-foot">
+
+                            <span data-i18n="postedOwner">
+                                Posted by Owner
+                            </span>
+
+                            <strong data-i18n="zeroBrokerageTag">
+                                ZERO BROKERAGE
+                            </strong>
+
+                        </div>
+
+                        <div class="listing-action">
+
+                            <a
+                                class="sr-btn"
+                                href="property-details.html?id=6"
+                                data-i18n="viewContact"
+                            >
+                                View Details &amp; Contact Owner
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROPERTY 7 -->
+                <article
+                    class="listing-card"
+                    data-property-id="property-7"
+                >
+
+                    <div
+                        class="listing-photo"
+                        style="background-image:url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80')"
+                    >
+
+                        <button
+                            class="property-favorite listing-favorite"
+                            type="button"
+                            aria-label="Save property"
+                            aria-pressed="false"
+                        >♡</button>
+
+                        <span class="listing-tag">
+                            For Sale
+                        </span>
+
+                    </div>
+
+
+                    <div class="listing-body">
+
+                        <p class="listing-price">
+                            ₹55,00,000
+                        </p>
+
+                        <h3 data-i18n="propTitle7">
+                            2 BHK apartment in HSR Layout
+                        </h3>
+
+                        <div class="listing-meta">
+                            ⌖ HSR Layout, Bengaluru<br>
+                            1,080 sq.ft. · Apartment
+                        </div>
+
+                        <div class="listing-foot">
+
+                            <span data-i18n="postedOwner">
+                                Posted by Owner
+                            </span>
+
+                            <strong data-i18n="zeroBrokerageTag">
+                                ZERO BROKERAGE
+                            </strong>
+
+                        </div>
+
+                        <div class="listing-action">
+
+                            <a
+                                class="sr-btn"
+                                href="property-details.html?id=7"
+                                data-i18n="viewContact"
+                            >
+                                View Details &amp; Contact Owner
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROPERTY 8 -->
+                <article
+                    class="listing-card"
+                    data-property-id="property-8"
+                >
+
+                    <div
+                        class="listing-photo"
+                        style="background-image:url('https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=900&q=80')"
+                    >
+
+                        <button
+                            class="property-favorite listing-favorite"
+                            type="button"
+                            aria-label="Save property"
+                            aria-pressed="false"
+                        >♡</button>
+
+                        <span class="listing-tag">
+                            For Sale
+                        </span>
+
+                    </div>
+
+
+                    <div class="listing-body">
+
+                        <p class="listing-price">
+                            ₹1,35,00,000
+                        </p>
+
+                        <h3 data-i18n="propTitle8">
+                            Independent house in J.P. Nagar
+                        </h3>
+
+                        <div class="listing-meta">
+                            ⌖ J.P. Nagar, Bengaluru<br>
+                            2,100 sq.ft. · Independent House
+                        </div>
+
+                        <div class="listing-foot">
+
+                            <span data-i18n="postedOwner">
+                                Posted by Owner
+                            </span>
+
+                            <strong data-i18n="zeroBrokerageTag">
+                                ZERO BROKERAGE
+                            </strong>
+
+                        </div>
+
+                        <div class="listing-action">
+
+                            <a
+                                class="sr-btn"
+                                href="property-details.html?id=8"
+                                data-i18n="viewContact"
+                            >
+                                View Details &amp; Contact Owner
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROPERTY 9 -->
+                <article
+                    class="listing-card"
+                    data-property-id="property-9"
+                >
+
+                    <div
+                        class="listing-photo"
+                        style="background-image:url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80')"
+                    >
+
+                        <button
+                            class="property-favorite listing-favorite"
+                            type="button"
+                            aria-label="Save property"
+                            aria-pressed="false"
+                        >♡</button>
+
+                        <span class="listing-tag">
+                            For Rent
+                        </span>
+
+                    </div>
+
+
+                    <div class="listing-body">
+
+                        <p class="listing-price">
+                            ₹28,000 / month
+                        </p>
+
+                        <h3 data-i18n="propTitle9">
+                            Ready-to-use office space
+                        </h3>
+
+                        <div class="listing-meta">
+                            ⌖ Outer Ring Road, Bengaluru<br>
+                            900 sq.ft. · Commercial
+                        </div>
+
+                        <div class="listing-foot">
+
+                            <span data-i18n="postedOwner">
+                                Posted by Owner
+                            </span>
+
+                            <strong data-i18n="zeroBrokerageTag">
+                                ZERO BROKERAGE
+                            </strong>
+
+                        </div>
+
+                        <div class="listing-action">
+
+                            <a
+                                class="sr-btn"
+                                href="property-details.html?id=9"
+                                data-i18n="viewContact"
+                            >
+                                View Details &amp; Contact Owner
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <!-- Bottom Information -->
+            <p
+                class="helper"
+                style="text-align:center;margin-top:24px"
+                data-i18n="ownerOnly"
+            >
+                Only owner-listed properties. Zero brokerage on every connection.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <div data-sr-footer></div>
+
+
+    <!-- JavaScript -->
+    <script src="js/common.js" defer></script>
+
+    <script src="js/home-translations.js" defer></script>
+
+    <script src="js/page-translations.js" defer></script>
+
+    <script src="js/property-enhancements.js" defer></script>
+
+    <script src="js/property-data.js" defer></script>
+<script src="js/buy.js" defer></script>
+
+</body>
+
+</html>

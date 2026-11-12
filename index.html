@@ -1,0 +1,1566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0b1f3a">
+
+    <meta name="description"
+        content="Find your dream property directly from owners. Explore houses, apartments and lands with STACKLY Real Estate.">
+
+    <title>STACKLY Real Estate | Find Your Property</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- COMMON CSS -->
+    <link rel="stylesheet" href="css/common.css">
+
+    <!-- HOME PAGE CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HERO SLIDER CSS -->
+    <link rel="stylesheet" href="css/hero-slider.css">
+</head>
+
+<body>
+
+    <!-- COMMON HEADER -->
+    <div data-sr-header></div>
+
+    <main>
+
+        <!-- =========================================
+             HERO SECTION
+        ========================================== -->
+
+        <section class="home-hero sr-hero-slider"
+            aria-label="Featured properties">
+
+            <!-- BACKGROUND SLIDES -->
+            <div class="sr-hero-slides" aria-hidden="true">
+
+                <div class="sr-hero-slide is-active"
+                    style="background-image:url('assets/home/hero\ image\ 01.webp')">
+                </div>
+
+                <div class="sr-hero-slide"
+                    style="background-image:url('assets/home/hero\ image\ 02.webp')">
+                </div>
+
+                <div class="sr-hero-slide"
+                    style="background-image:url('assets/home/hero\ image\ 03.webp')">
+                </div>
+
+            </div>
+
+            <div class="sr-hero-shade" aria-hidden="true"></div>
+
+            <div class="home-container">
+
+                <div class="hero-content">
+
+                    <span class="hero-badge">
+                        <span class="hero-badge-dot"></span>
+                        <span data-i18n="homeBadge">
+                            ZERO BROKERAGE · DIRECT OWNERS
+                        </span>
+                    </span>
+
+                    <h1>
+                        <span data-i18n="homeTitle">
+                            Find Your Property.
+                        </span>
+
+                        <span data-i18n="homeTitleHighlight">
+                            Directly from the Owner.
+                        </span>
+                    </h1>
+
+                    <p data-i18n="homeDescription">
+                        Discover land, houses, and apartments
+                        at transparent prices.
+                        Connect directly with property owners.
+                    </p>
+
+                </div>
+
+                <!-- PROPERTY SEARCH -->
+                <div class="hero-search">
+
+                    <form id="propertySearchForm">
+
+                        <!-- LOCATION -->
+                        <div class="search-field">
+
+                            <label for="searchLocation"
+                                data-i18n="location">
+                                LOCATION
+                            </label>
+
+                            <input
+                                type="text"
+                                id="searchLocation"
+                                placeholder="Enter city or locality"
+                                data-i18n-placeholder="locationPlaceholder"
+                            >
+
+                        </div>
+
+                        <!-- PROPERTY TYPE -->
+                        <div class="search-field">
+
+                            <label for="searchType"
+                                data-i18n="propertyType">
+                                PROPERTY TYPE
+                            </label>
+
+                            <select id="searchType">
+
+                                <option value=""
+                                    data-i18n="allPropertyTypes">
+                                    All property types
+                                </option>
+
+                                <option value="Apartment"
+                                    data-i18n="apartment">
+                                    Apartment
+                                </option>
+
+                                <option value="House"
+                                    data-i18n="independentHouse">
+                                    Independent House
+                                </option>
+
+                                <option value="Land"
+                                    data-i18n="landPlot">
+                                    Land / Plot
+                                </option>
+
+                                <option value="Commercial"
+                                    data-i18n="commercialProperty">
+                                    Commercial Property
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                        <!-- BUDGET -->
+                        <div class="search-field">
+
+                            <label for="searchBudget"
+                                data-i18n="lookingFor">
+                                LOOKING FOR
+                            </label>
+
+                            <select id="searchBudget">
+
+                                <option value=""
+                                    data-i18n="anyBudget">
+                                    Any Budget
+                                </option>
+
+                                <option value="5000000"
+                                    data-i18n="under50Lakhs">
+                                    Under ₹50 Lakhs
+                                </option>
+
+                                <option value="10000000"
+                                    data-i18n="under1Crore">
+                                    Under ₹1 Crore
+                                </option>
+
+                                <option value="20000000"
+                                    data-i18n="under2Crores">
+                                    Under ₹2 Crores
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                        <!-- INTENT -->
+                        <div class="search-field">
+
+                            <label for="searchIntent"
+                                data-i18n="intent">
+                                INTENT
+                            </label>
+
+                            <select id="searchIntent">
+
+                                <option value="Buy"
+                                    data-i18n="buy">
+                                    Buy
+                                </option>
+
+                                <option value="Rent"
+                                    data-i18n="rent">
+                                    Rent
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                        <!-- SEARCH BUTTON -->
+                        <button type="submit" class="search-submit">
+
+                            <span>⌕</span>
+
+                            <span data-i18n="searchProperties">
+                                Search Properties
+                            </span>
+
+                        </button>
+
+                    </form>
+
+                    <small data-i18n="searchNote">
+                        Find your dream property with zero brokerage.
+                    </small>
+
+                </div>
+
+            </div>
+
+            <!-- HERO SLIDER CONTROLS -->
+            <div class="sr-hero-controls"
+                aria-label="Hero slideshow controls">
+
+                <button
+                    class="sr-hero-arrow"
+                    type="button"
+                    data-hero-prev
+                    aria-label="Previous image">
+                    &#10094;
+                </button>
+
+                <div class="sr-hero-dots"
+                    role="group"
+                    aria-label="Select hero image">
+
+                    <button
+                        class="is-active"
+                        type="button"
+                        data-hero-dot="0"
+                        aria-label="Show image 1"
+                        aria-current="true">
+                    </button>
+
+                    <button
+                        type="button"
+                        data-hero-dot="1"
+                        aria-label="Show image 2">
+                    </button>
+
+                    <button
+                        type="button"
+                        data-hero-dot="2"
+                        aria-label="Show image 3">
+                    </button>
+
+                </div>
+
+                <button
+                    class="sr-hero-arrow"
+                    type="button"
+                    data-hero-next
+                    aria-label="Next image">
+                    &#10095;
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             PROPERTY CATEGORIES
+        ========================================== -->
+
+        <section class="home-categories">
+
+            <div class="home-container">
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="section-eyebrow"
+                            data-i18n="exploreProperties">
+                            EXPLORE PROPERTIES
+                        </span>
+
+                        <h2 data-i18n="categoryHeading">
+                            Find the right kind of property
+                        </h2>
+
+                        <p data-i18n="categoryDescription">
+                            From homes to land, explore properties
+                            that match your needs.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="category-grid">
+
+                    <!-- CATEGORY 1 -->
+                    <a href="buy.html?type=Land"
+                        class="category-card">
+
+                        <div class="category-image">
+
+                            <img
+                                src="assets/home/empty land img.webp"
+                                alt="Open land property"
+                                loading="lazy"
+                            >
+
+                            <span class="category-number">01</span>
+
+                        </div>
+
+                        <div class="category-info">
+
+                            <div>
+
+                                <h3 data-i18n="landPlot">
+                                    Land / Plot
+                                </h3>
+
+                                <p data-i18n="findIdealLand">
+                                    Find your ideal land
+                                </p>
+
+                            </div>
+
+                            <span class="category-arrow">↗</span>
+
+                        </div>
+
+                    </a>
+
+                    <!-- CATEGORY 2 -->
+                    <a href="buy.html?type=Apartment"
+                        class="category-card">
+
+                        <div class="category-image">
+
+                            <img
+                                src="assets/home/modern appartment.webp"
+                                alt="Modern apartment"
+                                loading="lazy"
+                            >
+
+                            <span class="category-number">02</span>
+
+                        </div>
+
+                        <div class="category-info">
+
+                            <div>
+
+                                <h3 data-i18n="apartments">
+                                    Apartments
+                                </h3>
+
+                                <p data-i18n="modernLivingSpaces">
+                                    Modern living spaces
+                                </p>
+
+                            </div>
+
+                            <span class="category-arrow">↗</span>
+
+                        </div>
+
+                    </a>
+
+                    <!-- CATEGORY 3 -->
+                    <a href="buy.html?type=House"
+                        class="category-card">
+
+                        <div class="category-image">
+
+                            <img
+                                src="assets/home/independent house.webp"
+                                alt="Independent house"
+                                loading="lazy"
+                            >
+
+                            <span class="category-number">03</span>
+
+                        </div>
+
+                        <div class="category-info">
+
+                            <div>
+
+                                <h3 data-i18n="independentHouses">
+                                    Independent Houses
+                                </h3>
+
+                                <p data-i18n="homesMoreSpace">
+                                    Homes with more space
+                                </p>
+
+                            </div>
+
+                            <span class="category-arrow">↗</span>
+
+                        </div>
+
+                    </a>
+
+                    <!-- CATEGORY 4 -->
+                    <a href="buy.html?type=Commercial"
+                        class="category-card">
+
+                        <div class="category-image">
+
+                            <img
+                                src="assets/home/commercial property.webp"
+                                alt="Commercial property"
+                                loading="lazy"
+                            >
+
+                            <span class="category-number">04</span>
+
+                        </div>
+
+                        <div class="category-info">
+
+                            <div>
+
+                                <h3 data-i18n="commercial">
+                                    Commercial
+                                </h3>
+
+                                <p data-i18n="businessSpaces">
+                                    Spaces for your business
+                                </p>
+
+                            </div>
+
+                            <span class="category-arrow">↗</span>
+
+                        </div>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             FEATURED PROPERTIES
+        ========================================== -->
+
+        <section class="featured-section">
+
+            <div class="home-container">
+
+                <div class="featured-heading">
+
+                    <div>
+
+                        <span class="section-eyebrow"
+                            data-i18n="handpicked">
+                            HANDPICKED FOR YOU
+                        </span>
+
+                        <h2 data-i18n="featuredHeading">
+                            Featured properties, directly from owners
+                        </h2>
+
+                        <p data-i18n="featuredDescription">
+                            Explore properties with transparent
+                            pricing and no brokerage.
+                        </p>
+
+                    </div>
+
+                    <a href="buy.html" class="view-all-link">
+
+                        <span data-i18n="viewAllProperties">
+                            View all properties
+                        </span>
+
+                        <span>→</span>
+
+                    </a>
+
+                </div>
+
+
+                <div class="property-grid" id="propertyGrid">
+
+                    <!-- PROPERTY 1 -->
+                    <article class="property-card"
+                        data-property-id="property-1">
+
+                        <div class="property-image-wrapper">
+
+                            <a href="property-details.html?id=property-1"
+                                class="property-image-link">
+                                <img class="property-slide active" src="assets/property 01/luxuious apartment exterior.webp" alt="Property exterior" loading="eager">
+                                <img class="property-slide" src="assets/property 01/luxuious apartment interior.webp" alt="Property interior" loading="lazy">
+                                <img class="property-slide" src="assets/property 01/luxurious apartment bedroom.webp" alt="Living room" loading="lazy">
+                                <img class="property-slide" src="assets/property 01/luxious bathroom.webp" alt="Bedroom" loading="lazy">
+                                <img class="property-slide" src="assets/property 01/living area.webp" alt="Kitchen" loading="lazy">
+                                <img class="property-slide" src="assets/property 01/luxurios balcony.webp" alt="Bathroom" loading="lazy">
+                            </a>
+
+                            <span class="property-tag"
+                                data-i18n="forSale">
+                                FOR SALE
+                            </span>
+
+                            <button class="property-favorite"
+                                type="button"
+                                aria-label="Save property"
+                                data-i18n-aria="saveProperty">
+                                ♡
+                            </button>
+
+                            <div class="slider-controls">
+
+                                <button type="button"
+                                    class="slide-prev"
+                                    aria-label="Previous image">
+                                    ‹
+                                </button>
+
+                                <span class="slide-count">1 / 6</span>
+
+                                <button type="button"
+                                    class="slide-next"
+                                    aria-label="Next image">
+                                    ›
+                                </button>
+
+                            </div>
+
+                            <div class="slider-dots">
+                                    <button aria-label="Image 1" class="active" type="button"></button>
+                                    <button aria-label="Image 2" type="button"></button>
+                                    <button aria-label="Image 3" type="button"></button>
+                                    <button aria-label="Image 4" type="button"></button>
+                                    <button aria-label="Image 5" type="button"></button>
+                                    <button aria-label="Image 6" type="button"></button>
+                                </div>
+
+                        </div>
+
+                        <div class="property-content">
+
+                            <div class="property-price">₹92,00,000</div>
+
+                            <h3 data-i18n="property1Title">
+                                3 BHK Apartment in Whitefield
+                            </h3>
+
+                            <p class="property-location">
+                                Bengaluru, Karnataka
+                            </p>
+
+                            <div class="property-features">
+
+                                <span data-i18n="threeBeds">3 Beds</span>
+                                <span data-i18n="twoBaths">2 Baths</span>
+                                <span>1,450 Sq.ft</span>
+
+                            </div>
+
+                            <div class="property-owner">
+
+                                <span data-i18n="propertyOwner">
+                                    ◉ Property Owner
+                                </span>
+
+                                <strong data-i18n="noBrokerage">
+                                    NO BROKERAGE
+                                </strong>
+
+                            </div>
+
+                            <a href="property-details.html?id=property-1"
+                                class="property-explore">
+
+                                <span data-i18n="viewDetailsContact">
+                                    View Details & Contact Owner
+                                </span>
+
+                                <span>→</span>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROPERTY 2 -->
+                    <article class="property-card"
+                        data-property-id="property-2">
+
+                        <div class="property-image-wrapper">
+
+                            <a href="property-details.html?id=property-2"
+                                class="property-image-link">
+                                <img class="property-slide active" src="assets/exterior/property 02 exteriour.webp" alt="Property exterior" loading="eager">
+                                <img class="property-slide" src="assets/interior/property 02 interior.webp" alt="Property interior" loading="lazy">
+                                <img class="property-slide" src="assets/living room/property 02 living room.webp" alt="Living room" loading="lazy">
+                                <img class="property-slide" src="assets/bedroom/property 02 bedroom.webp" alt="Bedroom" loading="lazy">
+                                <img class="property-slide" src="assets/bathroom/property 02 bathroom.webp" alt="Kitchen" loading="lazy">
+                                <img class="property-slide" src="assets/balcony/propert 02 balcony.webp" alt="Bathroom" loading="lazy">
+                            </a>
+
+                            <span class="property-tag"
+                                data-i18n="forSale">
+                                FOR SALE
+                            </span>
+
+                            <button class="property-favorite"
+                                type="button"
+                                aria-label="Save property"
+                                data-i18n-aria="saveProperty">
+                                ♡
+                            </button>
+
+                            <div class="slider-controls">
+
+                                <button type="button"
+                                    class="slide-prev"
+                                    aria-label="Previous image">
+                                    ‹
+                                </button>
+
+                                <span class="slide-count">1 / 6</span>
+
+                                <button type="button"
+                                    class="slide-next"
+                                    aria-label="Next image">
+                                    ›
+                                </button>
+
+                            </div>
+
+                            <div class="slider-dots">
+                                    <button aria-label="Image 1" class="active" type="button"></button>
+                                    <button aria-label="Image 2" type="button"></button>
+                                    <button aria-label="Image 3" type="button"></button>
+                                    <button aria-label="Image 4" type="button"></button>
+                                    <button aria-label="Image 5" type="button"></button>
+                                    <button aria-label="Image 6" type="button"></button>
+                                </div>
+
+                        </div>
+
+                        <div class="property-content">
+
+                            <div class="property-price">₹48,00,000</div>
+
+                            <h3 data-i18n="property2Title">
+                                2 BHK Residential Home in Sarjapur
+                            </h3>
+
+                            <p class="property-location">
+                                Bengaluru, Karnataka
+                            </p>
+
+                            <div class="property-features">
+
+                                <span data-i18n="twoBeds">2 Beds</span>
+                                <span data-i18n="twoBaths">2 Baths</span>
+                                <span>1,100 Sq.ft</span>
+
+                            </div>
+
+                            <div class="property-owner">
+
+                                <span data-i18n="propertyOwner">
+                                    ◉ Property Owner
+                                </span>
+
+                                <strong data-i18n="noBrokerage">
+                                    NO BROKERAGE
+                                </strong>
+
+                            </div>
+
+                            <a href="property-details.html?id=property-2"
+                                class="property-explore">
+
+                                <span data-i18n="viewDetailsContact">
+                                    View Details & Contact Owner
+                                </span>
+
+                                <span>→</span>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROPERTY 3 -->
+                    <article class="property-card"
+                        data-property-id="property-3">
+
+                        <div class="property-image-wrapper">
+
+                            <a href="property-details.html?id=property-3"
+                                class="property-image-link">
+                                <img class="property-slide active" src="assets/exterior/property 03 extriour.webp" alt="Property exterior" loading="eager">
+                                <img class="property-slide" src="assets/interior/property 03 interior.webp" alt="Property interior" loading="lazy">
+                                <img class="property-slide" src="assets/bedroom/property 03 bedroom.webp" alt="Living room" loading="lazy">
+                                <img class="property-slide" src="assets/living room/property 03 living room.webp" alt="Bedroom" loading="lazy">
+                                <img class="property-slide" src="assets/balcony/property 03 balacony.webp" alt="Kitchen" loading="lazy">
+                                <img class="property-slide" src="assets/bathroom/property 03 bathroom.webp" alt="Bathroom" loading="lazy">
+                            </a>
+
+                            <span class="property-tag rent-tag"
+                                data-i18n="forRent">
+                                FOR RENT
+                            </span>
+
+                            <button class="property-favorite"
+                                type="button"
+                                aria-label="Save property"
+                                data-i18n-aria="saveProperty">
+                                ♡
+                            </button>
+
+                            <div class="slider-controls">
+
+                                <button type="button"
+                                    class="slide-prev"
+                                    aria-label="Previous image">
+                                    ‹
+                                </button>
+
+                                <span class="slide-count">1 / 6</span>
+
+                                <button type="button"
+                                    class="slide-next"
+                                    aria-label="Next image">
+                                    ›
+                                </button>
+
+                            </div>
+
+                            <div class="slider-dots">
+                                    <button aria-label="Image 1" class="active" type="button"></button>
+                                    <button aria-label="Image 2" type="button"></button>
+                                    <button aria-label="Image 3" type="button"></button>
+                                    <button aria-label="Image 4" type="button"></button>
+                                    <button aria-label="Image 5" type="button"></button>
+                                    <button aria-label="Image 6" type="button"></button>
+                                </div>
+
+                        </div>
+
+                        <div class="property-content">
+
+                            <div class="property-price">₹28,000 / month</div>
+
+                            <h3 data-i18n="property3Title">
+                                Ready to Move Apartment in Hebbal
+                            </h3>
+
+                            <p class="property-location">
+                                Bengaluru, Karnataka
+                            </p>
+
+                            <div class="property-features">
+
+                                <span data-i18n="twoBeds">2 Beds</span>
+                                <span data-i18n="twoBaths">2 Baths</span>
+                                <span>950 Sq.ft</span>
+
+                            </div>
+
+                            <div class="property-owner">
+
+                                <span data-i18n="propertyOwner">
+                                    ◉ Property Owner
+                                </span>
+
+                                <strong data-i18n="noBrokerage">
+                                    NO BROKERAGE
+                                </strong>
+
+                            </div>
+
+                            <a href="property-details.html?id=property-3"
+                                class="property-explore">
+
+                                <span data-i18n="viewDetailsContact">
+                                    View Details & Contact Owner
+                                </span>
+
+                                <span>→</span>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROPERTY 4 -->
+                    <article class="property-card"
+                        data-property-id="property-4">
+
+                        <div class="property-image-wrapper">
+
+                            <a href="property-details.html?id=property-4"
+                                class="property-image-link">
+                                <img class="property-slide active" src="assets/exterior/property 04 exteriour.webp" alt="Property exterior" loading="eager">
+                                <img class="property-slide" src="assets/interior/property 04 interior.webp" alt="Property interior" loading="lazy">
+                                <img class="property-slide" src="assets/living room/property 04 living room.webp" alt="Living room" loading="lazy">
+                                <img class="property-slide" src="assets/bedroom/property 04 bedroom.webp" alt="Bedroom" loading="lazy">
+                                <img class="property-slide" src="assets/balcony/property 04 balcony.webp" alt="Kitchen" loading="lazy">
+                                <img class="property-slide" src="assets/bathroom/property 04 bathroom.webp" alt="Bathroom" loading="lazy">
+                            </a>
+
+                            <span class="property-tag"
+                                data-i18n="forSale">
+                                FOR SALE
+                            </span>
+
+                            <button class="property-favorite"
+                                type="button"
+                                aria-label="Save property"
+                                data-i18n-aria="saveProperty">
+                                ♡
+                            </button>
+
+                            <div class="slider-controls">
+
+                                <button type="button"
+                                    class="slide-prev"
+                                    aria-label="Previous image">
+                                    ‹
+                                </button>
+
+                                <span class="slide-count">1 / 6</span>
+
+                                <button type="button"
+                                    class="slide-next"
+                                    aria-label="Next image">
+                                    ›
+                                </button>
+
+                            </div>
+
+                            <div class="slider-dots">
+                                    <button aria-label="Image 1" class="active" type="button"></button>
+                                    <button aria-label="Image 2" type="button"></button>
+                                    <button aria-label="Image 3" type="button"></button>
+                                    <button aria-label="Image 4" type="button"></button>
+                                    <button aria-label="Image 5" type="button"></button>
+                                    <button aria-label="Image 6" type="button"></button>
+                                </div>
+
+                        </div>
+
+                        <div class="property-content">
+
+                            <div class="property-price">₹68,00,000</div>
+
+                            <h3 data-i18n="property4Title">
+                                2 BHK Apartment in Electronic City
+                            </h3>
+
+                            <p class="property-location">
+                                Bengaluru, Karnataka
+                            </p>
+
+                            <div class="property-features">
+
+                                <span data-i18n="twoBeds">2 Beds</span>
+                                <span data-i18n="twoBaths">2 Baths</span>
+                                <span>1,200 Sq.ft</span>
+
+                            </div>
+
+                            <div class="property-owner">
+
+                                <span data-i18n="propertyOwner">
+                                    ◉ Property Owner
+                                </span>
+
+                                <strong data-i18n="noBrokerage">
+                                    NO BROKERAGE
+                                </strong>
+
+                            </div>
+
+                            <a href="property-details.html?id=property-4"
+                                class="property-explore">
+
+                                <span data-i18n="viewDetailsContact">
+                                    View Details & Contact Owner
+                                </span>
+
+                                <span>→</span>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROPERTY 5 -->
+                    <article class="property-card"
+                        data-property-id="property-5">
+
+                        <div class="property-image-wrapper">
+
+                            <a href="property-details.html?id=property-5"
+                                class="property-image-link">
+                                <img class="property-slide active" src="assets/exterior/property 05 exteriour.webp" alt="Property exterior" loading="eager">
+                                <img class="property-slide" src="assets/interior/property 05 interior.webp" alt="Property interior" loading="lazy">
+                                <img class="property-slide" src="assets/bedroom/property 05 bedroom.webp" alt="Living room" loading="lazy">
+                                <img class="property-slide" src="assets/balcony/property 05 balcony.webp" alt="Bedroom" loading="lazy">
+                                <img class="property-slide" src="assets/bathroom/property 05 bathroom.webp" alt="Kitchen" loading="lazy">
+                                <img class="property-slide" src="assets/living room/property 05 living room.webp" alt="Bathroom" loading="lazy">
+                            </a>
+
+                            <span class="property-tag"
+                                data-i18n="forSale">
+                                FOR SALE
+                            </span>
+
+                            <button class="property-favorite"
+                                type="button"
+                                aria-label="Save property"
+                                data-i18n-aria="saveProperty">
+                                ♡
+                            </button>
+
+                            <div class="slider-controls">
+
+                                <button type="button"
+                                    class="slide-prev"
+                                    aria-label="Previous image">
+                                    ‹
+                                </button>
+
+                                <span class="slide-count">1 / 6</span>
+
+                                <button type="button"
+                                    class="slide-next"
+                                    aria-label="Next image">
+                                    ›
+                                </button>
+
+                            </div>
+
+                            <div class="slider-dots">
+                                    <button aria-label="Image 1" class="active" type="button"></button>
+                                    <button aria-label="Image 2" type="button"></button>
+                                    <button aria-label="Image 3" type="button"></button>
+                                    <button aria-label="Image 4" type="button"></button>
+                                    <button aria-label="Image 5" type="button"></button>
+                                    <button aria-label="Image 6" type="button"></button>
+                                </div>
+
+                        </div>
+
+                        <div class="property-content">
+
+                            <div class="property-price">₹1,15,00,000</div>
+
+                            <h3 data-i18n="property5Title">
+                                3 BHK House in Whitefield
+                            </h3>
+
+                            <p class="property-location">
+                                Bengaluru, Karnataka
+                            </p>
+
+                            <div class="property-features">
+
+                                <span data-i18n="threeBeds">3 Beds</span>
+                                <span data-i18n="threeBaths">3 Baths</span>
+                                <span>1,800 Sq.ft</span>
+
+                            </div>
+
+                            <div class="property-owner">
+
+                                <span data-i18n="propertyOwner">
+                                    ◉ Property Owner
+                                </span>
+
+                                <strong data-i18n="noBrokerage">
+                                    NO BROKERAGE
+                                </strong>
+
+                            </div>
+
+                            <a href="property-details.html?id=property-5"
+                                class="property-explore">
+
+                                <span data-i18n="viewDetailsContact">
+                                    View Details & Contact Owner
+                                </span>
+
+                                <span>→</span>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROPERTY 6 -->
+                    <article class="property-card"
+                        data-property-id="property-6">
+
+                        <div class="property-image-wrapper">
+
+                            <a href="property-details.html?id=property-6"
+                                class="property-image-link">
+                                <img class="property-slide active" src="assets/exterior/property 06 exterior.webp" alt="Property exterior" loading="eager">
+                                <img class="property-slide" src="assets/interior/property 06 interior.webp" alt="Property interior" loading="lazy">
+                                <img class="property-slide" src="assets/living room/property 06 living room.webp" alt="Living room" loading="lazy">
+                                <img class="property-slide" src="assets/bedroom/property 06 bedroom.webp" alt="Bedroom" loading="lazy">
+                                <img class="property-slide" src="assets/bathroom/property 06 bathroom.webp" alt="Kitchen" loading="lazy">
+                                <img class="property-slide" src="assets/balcony/property 06 balcony.webp" alt="Bathroom" loading="lazy">
+                            </a>
+
+                            <span class="property-tag"
+                                data-i18n="forSale">
+                                FOR SALE
+                            </span>
+
+                            <button class="property-favorite"
+                                type="button"
+                                aria-label="Save property"
+                                data-i18n-aria="saveProperty">
+                                ♡
+                            </button>
+
+                            <div class="slider-controls">
+
+                                <button type="button"
+                                    class="slide-prev"
+                                    aria-label="Previous image">
+                                    ‹
+                                </button>
+
+                                <span class="slide-count">1 / 6</span>
+
+                                <button type="button"
+                                    class="slide-next"
+                                    aria-label="Next image">
+                                    ›
+                                </button>
+
+                            </div>
+
+                            <div class="slider-dots">
+                                    <button aria-label="Image 1" class="active" type="button"></button>
+                                    <button aria-label="Image 2" type="button"></button>
+                                    <button aria-label="Image 3" type="button"></button>
+                                    <button aria-label="Image 4" type="button"></button>
+                                    <button aria-label="Image 5" type="button"></button>
+                                    <button aria-label="Image 6" type="button"></button>
+                                </div>
+
+                        </div>
+
+                        <div class="property-content">
+
+                            <div class="property-price">₹72,00,000</div>
+
+                            <h3 data-i18n="property6Title">
+                                Residential Villa in Sarjapur
+                            </h3>
+
+                            <p class="property-location">
+                                Bengaluru, Karnataka
+                            </p>
+
+                            <div class="property-features">
+
+                                <span data-i18n="threeBeds">3 Beds</span>
+                                <span data-i18n="twoBaths">2 Baths</span>
+                                <span>1,650 Sq.ft</span>
+
+                            </div>
+
+                            <div class="property-owner">
+
+                                <span data-i18n="propertyOwner">
+                                    ◉ Property Owner
+                                </span>
+
+                                <strong data-i18n="noBrokerage">
+                                    NO BROKERAGE
+                                </strong>
+
+                            </div>
+
+                            <a href="property-details.html?id=property-6"
+                                class="property-explore">
+
+                                <span data-i18n="viewDetailsContact">
+                                    View Details & Contact Owner
+                                </span>
+
+                                <span>→</span>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <!-- PROPERTY 7 -->
+                    <article class="property-card" data-property-id="property-7">
+                        <div class="property-image-wrapper">
+                            <a href="property-details.html?id=property-7" class="property-image-link">
+                                <img class="property-slide active" src="assets/exterior/property 07 exteriour.webp" alt="Property exterior" loading="eager">
+                                <img class="property-slide" src="assets/interior/property 07 interior.webp" alt="Property interior" loading="lazy">
+                                <img class="property-slide" src="assets/living room/property 02 living room.webp" alt="Living room" loading="lazy">
+                                <img class="property-slide" src="assets/bedroom/property 03 bedroom.webp" alt="Bedroom" loading="lazy">
+                                <img class="property-slide" src="assets/balcony/propert 02 balcony.webp" alt="Kitchen" loading="lazy">
+                                <img class="property-slide" src="assets/bathroom/property 02 bathroom.webp" alt="Bathroom" loading="lazy">
+                            </a>
+                            <div class="slider-controls"><button class="slide-prev" type="button" aria-label="Previous image">‹</button><span class="slide-count">1 / 6</span><button class="slide-next" type="button" aria-label="Next image">›</button></div>
+                            <div class="slider-dots">
+                                    <button aria-label="Image 1" class="active" type="button"></button>
+                                    <button aria-label="Image 2" type="button"></button>
+                                    <button aria-label="Image 3" type="button"></button>
+                                    <button aria-label="Image 4" type="button"></button>
+                                    <button aria-label="Image 5" type="button"></button>
+                                    <button aria-label="Image 6" type="button"></button>
+                                </div>
+                            <span class="property-tag" data-i18n="forSale">FOR SALE</span>
+                            <button class="property-favorite" type="button" aria-label="Save property" data-i18n-aria="saveProperty">♡</button>
+                        </div>
+                        <div class="property-content">
+                            <div class="property-price">₹55,00,000</div>
+                            <h3 data-i18n="property7Title">2 BHK Apartment in HSR Layout</h3>
+                            <p class="property-location">Bengaluru, Karnataka</p>
+                            <div class="property-features"><span data-i18n="twoBeds">2 Beds</span><span data-i18n="twoBaths">2 Baths</span><span>1,080 Sq.ft</span></div>
+                            <div class="property-owner"><span data-i18n="propertyOwner">◉ Property Owner</span><strong data-i18n="noBrokerage">NO BROKERAGE</strong></div>
+                            <a href="property-details.html?id=property-7" class="property-explore"><span data-i18n="viewDetailsContact">View Details &amp; Contact Owner</span><span>→</span></a>
+                        </div>
+                    </article>
+
+                    <!-- PROPERTY 8 -->
+                    <article class="property-card" data-property-id="property-8">
+                        <div class="property-image-wrapper">
+                            <a href="property-details.html?id=property-8" class="property-image-link">
+                                <img class="property-slide active" src="assets/exterior/property 08 exterior.webp" alt="Property exterior" loading="eager">
+                                <img class="property-slide" src="assets/interior/property 08 interior.webp" alt="Property interior" loading="lazy">
+                                <img class="property-slide" src="assets/balcony/property 06 balcony.webp" alt="Living room" loading="lazy">
+                                <img class="property-slide" src="assets/bedroom/property 04 bedroom.webp" alt="Bedroom" loading="lazy">
+                                <img class="property-slide" src="assets/living room/property 05 living room.webp" alt="Kitchen" loading="lazy">
+                                <img class="property-slide" src="assets/bathroom/property 05 bathroom.webp" alt="Bathroom" loading="lazy">
+                            </a>
+                            <div class="slider-controls"><button class="slide-prev" type="button" aria-label="Previous image">‹</button><span class="slide-count">1 / 6</span><button class="slide-next" type="button" aria-label="Next image">›</button></div>
+                            <div class="slider-dots">
+                                    <button aria-label="Image 1" class="active" type="button"></button>
+                                    <button aria-label="Image 2" type="button"></button>
+                                    <button aria-label="Image 3" type="button"></button>
+                                    <button aria-label="Image 4" type="button"></button>
+                                    <button aria-label="Image 5" type="button"></button>
+                                    <button aria-label="Image 6" type="button"></button>
+                                </div>
+                            <span class="property-tag" data-i18n="forSale">FOR SALE</span>
+                            <button class="property-favorite" type="button" aria-label="Save property" data-i18n-aria="saveProperty">♡</button>
+                        </div>
+                        <div class="property-content">
+                            <div class="property-price">₹1,35,00,000</div>
+                            <h3 data-i18n="property8Title">Independent House in J.P. Nagar</h3>
+                            <p class="property-location">J.P. Nagar, Bengaluru</p>
+                            <div class="property-features"><span data-i18n="threeBeds">3 Beds</span><span data-i18n="threeBaths">3 Baths</span><span>2,100 Sq.ft</span></div>
+                            <div class="property-owner"><span data-i18n="propertyOwner">◉ Property Owner</span><strong data-i18n="noBrokerage">NO BROKERAGE</strong></div>
+                            <a href="property-details.html?id=property-8" class="property-explore"><span data-i18n="viewDetailsContact">View Details &amp; Contact Owner</span><span>→</span></a>
+                        </div>
+                    </article>
+
+                    <!-- PROPERTY 9 -->
+                    <article class="property-card" data-property-id="property-9">
+                        <div class="property-image-wrapper">
+                            <a href="property-details.html?id=property-9" class="property-image-link">
+                                <img class="property-slide active" src="assets/exterior/property 09 exterior.webp" alt="Property exterior" loading="eager">
+                                <img class="property-slide" src="assets/interior/property 09 interior.webp" alt="Property interior" loading="lazy">
+                                <img class="property-slide" src="assets/bathroom/property 03 bathroom.webp" alt="Living room" loading="lazy">
+                                <img class="property-slide" src="assets/living room/property 02 living room.webp" alt="Bedroom" loading="lazy">
+                                <img class="property-slide" src="assets/balcony/property 05 balcony.webp" alt="Kitchen" loading="lazy">
+                                <img class="property-slide" src="assets/bedroom/property 04 bedroom.webp" alt="Bathroom" loading="lazy">
+                            </a>
+                            <div class="slider-controls"><button class="slide-prev" type="button" aria-label="Previous image">‹</button><span class="slide-count">1 / 6</span><button class="slide-next" type="button" aria-label="Next image">›</button></div>
+                            <div class="slider-dots">
+                                    <button aria-label="Image 1" class="active" type="button"></button>
+                                    <button aria-label="Image 2" type="button"></button>
+                                    <button aria-label="Image 3" type="button"></button>
+                                    <button aria-label="Image 4" type="button"></button>
+                                    <button aria-label="Image 5" type="button"></button>
+                                    <button aria-label="Image 6" type="button"></button>
+                                </div>
+                            <span class="property-tag" data-i18n="forRent">FOR RENT</span>
+                            <button class="property-favorite" type="button" aria-label="Save property" data-i18n-aria="saveProperty">♡</button>
+                        </div>
+                        <div class="property-content">
+                            <div class="property-price">₹28,000 / month</div>
+                            <h3 data-i18n="property9Title">Ready-to-use Office Space</h3>
+                            <p class="property-location">Outer Ring Road, Bengaluru</p>
+                            <div class="property-features"><span>900 Sq.ft</span><span data-i18n="commercialProperty">Commercial</span></div>
+                            <div class="property-owner"><span data-i18n="propertyOwner">◉ Property Owner</span><strong data-i18n="noBrokerage">NO BROKERAGE</strong></div>
+                            <a href="property-details.html?id=property-9" class="property-explore"><span data-i18n="viewDetailsContact">View Details &amp; Contact Owner</span><span>→</span></a>
+                        </div>
+                    </article>
+
+                </div>
+
+
+                <div class="featured-bottom">
+
+                    <a href="buy.html" class="sr-btn">
+
+                        <span data-i18n="exploreAllProperties">
+                            Explore All Properties
+                        </span>
+
+                        <span>→</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             HOW IT WORKS
+        ========================================== -->
+
+        <section class="how-section">
+
+            <div class="home-container">
+
+                <div class="section-heading">
+
+                    <span class="section-eyebrow"
+                        data-i18n="simpleProcess">
+                        SIMPLE PROCESS
+                    </span>
+
+                    <h2 data-i18n="howItWorks">
+                        How it works
+                    </h2>
+
+                    <p data-i18n="howDescription">
+                        Find your property in just three simple steps.
+                    </p>
+
+                </div>
+
+                <div class="how-grid">
+
+                    <!-- STEP 1 -->
+                    <div class="how-card">
+
+                        <span class="how-number">01</span>
+
+                        <div class="how-icon">⌕</div>
+
+                        <h3 data-i18n="searchProperty">
+                            Search a Property
+                        </h3>
+
+                        <p data-i18n="searchPropertyDescription">
+                            Browse properties based on your
+                            preferred location and budget.
+                        </p>
+
+                    </div>
+
+                    <!-- STEP 2 -->
+                    <div class="how-card">
+
+                        <span class="how-number">02</span>
+
+                        <div class="how-icon">⌂</div>
+
+                        <h3 data-i18n="exploreDetails">
+                            Explore Details
+                        </h3>
+
+                        <p data-i18n="exploreDetailsDescription">
+                            Check property photos, features,
+                            pricing and location.
+                        </p>
+
+                    </div>
+
+                    <!-- STEP 3 -->
+                    <div class="how-card">
+
+                        <span class="how-number">03</span>
+
+                        <div class="how-icon">↗</div>
+
+                        <h3 data-i18n="connectOwner">
+                            Connect With Owner Directly
+                        </h3>
+
+                        <p data-i18n="connectOwnerDescription">
+                            Contact property owners directly
+                            without paying brokerage.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             WHY CHOOSE STACKLY
+        ========================================== -->
+
+        <section class="why-section">
+
+            <div class="home-container">
+
+                <div class="section-heading">
+
+                    <span class="section-eyebrow"
+                        data-i18n="stacklyAdvantage">
+                        THE STACKLY ADVANTAGE
+                    </span>
+
+                    <h2 data-i18n="whyChooseStackly">
+                        Why choose STACKLY?
+                    </h2>
+
+                    <p data-i18n="whyDescription">
+                        A smarter and more transparent
+                        way to find your next property.
+                    </p>
+
+                </div>
+
+                <div class="why-grid">
+
+                    <!-- BENEFIT 1 -->
+                    <div class="why-card">
+
+                        <span class="why-icon">₹</span>
+
+                        <div>
+
+                            <h3 data-i18n="zeroBrokerage">
+                                Zero Brokerage
+                            </h3>
+
+                            <p data-i18n="zeroBrokerageDescription">
+                                Connect directly with property owners.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- BENEFIT 2 -->
+                    <div class="why-card">
+
+                        <span class="why-icon">✓</span>
+
+                        <div>
+
+                            <h3 data-i18n="directCommunication">
+                                Direct Owner Communication
+                            </h3>
+
+                            <p data-i18n="directCommunicationDescription">
+                                Talk directly without unnecessary intermediaries.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- BENEFIT 3 -->
+                    <div class="why-card">
+
+                        <span class="why-icon">⌕</span>
+
+                        <div>
+
+                            <h3 data-i18n="transparentPricing">
+                                Transparent Pricing
+                            </h3>
+
+                            <p data-i18n="transparentPricingDescription">
+                                Explore property prices with clarity.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- BENEFIT 4 -->
+                    <div class="why-card">
+
+                        <span class="why-icon">⌂</span>
+
+                        <div>
+
+                            <h3 data-i18n="easyDiscovery">
+                                Easy Property Discovery
+                            </h3>
+
+                            <p data-i18n="easyDiscoveryDescription">
+                                Find suitable properties with ease.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- BENEFIT 5 -->
+                    <div class="why-card">
+
+                        <span class="why-icon">◇</span>
+
+                        <div>
+
+                            <h3 data-i18n="verifiedListings">
+                                Owner Verified Listings
+                            </h3>
+
+                            <p data-i18n="verifiedListingsDescription">
+                                Discover property listings with clear owner details.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- BENEFIT 6 -->
+                    <div class="why-card">
+
+                        <span class="why-icon">↗</span>
+
+                        <div>
+
+                            <h3 data-i18n="hassleFree">
+                                Hassle-Free Experience
+                            </h3>
+
+                            <p data-i18n="hassleFreeDescription">
+                                Enjoy a simple and convenient property journey.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             CALL TO ACTION
+        ========================================== -->
+
+        <section class="home-cta">
+
+            <div class="home-container">
+
+                <div class="cta-content">
+
+                    <div>
+
+                        <span class="section-eyebrow"
+                            data-i18n="nextMove">
+                            YOUR NEXT MOVE STARTS HERE
+                        </span>
+
+                        <h2 data-i18n="ctaHeading">
+                            Own a property? Meet your next buyer or renter.
+                        </h2>
+
+                        <p data-i18n="ctaDescription">
+                            List your property on STACKLY
+                            and connect directly with interested people.
+                        </p>
+
+                    </div>
+
+                    <a href="list-property.html" class="sr-btn">
+
+                        <span data-i18n="listYourProperty">
+                            List Your Property
+                        </span>
+
+                        <span>→</span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         COMMON FOOTER
+    ========================================== -->
+
+    <div data-sr-footer></div>
+
+
+    <!-- =========================================
+         COMMON JAVASCRIPT
+    ========================================== -->
+
+    <script src="js/common.js" defer></script>
+    <script src="js/home-translations.js" defer></script>
+    <script src="js/page-translations.js" defer></script>
+
+    <!-- HOME PAGE JAVASCRIPT -->
+
+    <script src="js/property-data.js" defer></script>
+    <script src="js/script.js" defer></script>
+
+    <!-- HERO SLIDER JAVASCRIPT -->
+
+    <script src="js/hero-slider.js" defer></script>
+
+</body>
+</html>
